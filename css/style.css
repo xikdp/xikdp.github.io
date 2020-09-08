@@ -28,3 +28,7 @@
 .card-panel:hover{
 	transform: scale(1.05);
 }
+
+.pr{
+	padding: 20px 0;
+}
