@@ -22,9 +22,22 @@
 
 .card-panel{
 	transition: 0.5s;
-	height: 20%;
+	height: 10%;
 }
 
 .card-panel:hover{
+	transform: scale(1.05);
+}
+
+.pr,
+.contact{
+	padding: 20px 0;
+}
+
+.materialboxed{
+	transition: 0.5s;
+	box-shadow: 0px 0.5px 10px 0px;
+}
+.materialboxed:hover{
 	transform: scale(1.05);
 }
