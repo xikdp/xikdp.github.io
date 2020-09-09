@@ -29,6 +29,7 @@
 	transform: scale(1.05);
 }
 
+<<<<<<< HEAD
 .pr,
 .contact{
 	padding: 20px 0;
@@ -41,3 +42,8 @@
 .materialboxed:hover{
 	transform: scale(1.05);
 }
+=======
+.pr{
+	padding: 20px 0;
+}
+>>>>>>> 34cd4c67edee189a020418cb2ad38427155cb9b3
