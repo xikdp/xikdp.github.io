@@ -37,7 +37,7 @@
 .materialboxed{
 	transition: 0.5s;
 	box-shadow: 0px 0.5px 10px 0px;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 .materialboxed:hover{
 	transform: scale(1.05);
