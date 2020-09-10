@@ -1,7 +1,4 @@
 <?php
-  $notify = '';
-  $notifyClass = '';
-  
   if(isset($_POST['submit'])){
       // Membuat variabl untuk menerima data dari form
       $email = $_POST['email'];
