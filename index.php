@@ -1,23 +1,3 @@
-<?php
-  if($_POST['submit']){
-    $admin = 'dandakomang09@gmail.com'; //ganti email dg email admin (email penerima pesan)
-    
-    $nama = htmlentities($_POST['nama']);
-    $email  = htmlentities($_POST['email']);
-    $phone  = htmlentities($_POST['phone']);
-    $sm  = htmlentities($_POST['sm']);
-    
-    $pengirim = 'Dari: '.$nama.' <'.$email.'>';
-    
-    if(mail($admin, $judul, $sm, $pengirim)){
-      echo 'SUCCESS: Pesan anda berhasil di kirim. <a href="index.php">Kembali</a>';
-    }else{
-      echo 'ERROR: Pesan anda gagal di kirim silahkan coba lagi. <a href="index.php">Kembali</a>';
-    }
-  }else{
-    header("Location: index.php");
-  }
-?>
 <!DOCTYPE html>
   <html>
     <title>xikdp</title>
