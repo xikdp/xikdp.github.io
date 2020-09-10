@@ -1,3 +1,23 @@
+<?php
+  if($_POST['submit']){
+    $admin = 'dandakomang09@gmail.com'; //ganti email dg email admin (email penerima pesan)
+    
+    $nama = htmlentities($_POST['nama']);
+    $email  = htmlentities($_POST['email']);
+    $phone  = htmlentities($_POST['phone']);
+    $sm  = htmlentities($_POST['sm']);
+    
+    $pengirim = 'Dari: '.$nama.' <'.$email.'>';
+    
+    if(mail($admin, $judul, $sm, $pengirim)){
+      echo 'SUCCESS: Pesan anda berhasil di kirim. <a href="index.php">Kembali</a>';
+    }else{
+      echo 'ERROR: Pesan anda gagal di kirim silahkan coba lagi. <a href="index.php">Kembali</a>';
+    }
+  }else{
+    header("Location: index.php");
+  }
+?>
 <!DOCTYPE html>
   <html>
     <title>xikdp</title>
@@ -102,11 +122,11 @@
         <div class="row">
           <div class="col m6 left">
             <h5 class="light white-text ">Dinas Kominfo Provsu </br>2017-2018 January-March</h5>
-            <p class="intern white-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione velit modi, incidunt laborum magni vero rem consectetur temporibus quibusdam repellat adipisci excepturi laboriosam sint doloribus nemo nostrum! Perferendis, inventore, distinctio.</p>
+            <p class="intern white-text">Internship member at Dinas Kominfo Provsu for 3 months. I learned about front-end develop theory. And then after got the theory about front-end develop, i got Data Entry Project. In this place, I learned how their manage time for their project, what the user needs, make the project accord requirements.</p>
           </div>
           <div class="col m6 left">
             <h5 class="light white-text">Stasiun Klimatologi Sampali Medan </br>2017-2018 April-June</h5>
-            <p class="intern white-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione velit modi, incidunt laborum magni vero rem consectetur temporibus quibusdam repellat adipisci excepturi laboriosam sint doloribus nemo nostrum! Perferendis, inventore, distinctio.</p>
+            <p class="intern white-text">Internship member at Stasiun Klimatologi Sampali for 3 months. I learned about make SMS Gateway, and finish in 1 months. And then worked on a project developed a website Stasiun Klimatologi Sampali. In this place, i learned how to work on real project.</p>
           </div>
         </div>
       </div>
@@ -123,7 +143,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/ps.png" style="height: 60px;">
               <h5>Adobe Photoshop</h5>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Adobe Photoshop</p>
             </div>
           </div>
 
@@ -131,7 +151,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/xd.png" style="height: 60px;">
               <h5>Adobe XD</h5><br/>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Adobe XD</p>
             </div>
           </div>
 
@@ -139,7 +159,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/figma.png" style="height: 60px;">
               <h5>Figma</h5><br/>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Figma</p>
             </div>
           </div>
 
@@ -147,7 +167,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/excel.png" style="height: 60px;">
               <h5>Microsoft Excel</h5><br/>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Microsoft Excel</p>
             </div>
           </div>
         </div>
@@ -158,7 +178,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/html5.png" style="height: 60px">
               <h5>HTML <br>5</h5>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using HTML5</p>
             </div>
           </div>
 
@@ -166,7 +186,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/css.png" style="height: 60px">
               <h5>CSS <br>3</h5>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Css, with framework materialize, and bootstrap</p>
             </div>
           </div>
 
@@ -174,7 +194,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/js.png" style="height: 60px;">
               <h5>Javascript<br>&nbsp;</h5>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using Javascript native</p>
             </div>
           </div>
 
@@ -182,7 +202,7 @@
             <div class="card-panel center professional" id="big">
               <img src="img/icon/php.png" style="height: 60px;">
               <h5>PHP <br>&nbsp</h5>
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Laboriosam accusantium delectus quaerat distinctio.</p>
+              <p>Skilled using PHP native</p>
             </div>
           </div>
         </div>
@@ -242,14 +262,15 @@
         </h3><br/>
         <div class="row">
           <div class="col m6 s12">
-            <div class="card-panel teal lighten-2 white-text center panel_contact">
+            <div class="card-panel teal lighten-2 white-text center panel_contact"><br/>
               <i class="material-icons">mail</i>
-              <h5>Contact</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur aliquam officia beatae assumenda iure vero eligendi quae cum autem. Dolorum cum provident temporibus ab inventore pariatur nam at libero.</p>
+              <h5>Contact</h5><br/>
+              <p>If you want to hire me or invite me on your job, please contact me in this social media or you can send me the email by fill this form.</p><br/>
               <a href="" class="sosmed"><img src="img/icon/instagram2.png" style="height: 20px"></a>
               <a href="" class="sosmed"><img src="img/icon/fb.png" style="height: 20px"></a>
               <a href="" class="sosmed"><img src="img/icon/twitter2.png" style="height: 20px"></a>
               <a href="" class="sosmed"><img src="img/icon/linkedin.png" style="height: 20px"></a>
+              <a href="https://wa.me/082267396716" class="sosmed"><img src="img/icon/wa.png" style="height: 25px;"></a><br/>
             </div>
           </div>
           <div class="col m6 s12">

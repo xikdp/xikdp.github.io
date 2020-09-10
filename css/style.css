@@ -22,7 +22,7 @@
 
 .professional{
 	transition: 0.1s;
-	height: 10%;
+	height: 270px;
 }
 
 .professional:hover{
@@ -48,14 +48,18 @@
 }
 
 .panel_contact{
-	height: 20%;
+	height: 380px;
 }
 
 .send{
 	width: 100% !important;
 }
 
-.send,.cv:hover{
+.send:hover{
+	background-color: #00695C !important;
+}
+
+.cv:hover{
 	background-color: #00695C !important;
 }
 
