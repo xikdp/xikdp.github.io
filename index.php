@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
   $notify = '';
   $notifyClass = '';
@@ -34,8 +33,7 @@
           $notifyClass = 'errordiv';
       }
 ?>
-=======
->>>>>>> 0be630706f48578d815bfae7c914771e093cf943
+
 <!DOCTYPE html>
   <html>
     <title>xikdp</title>
