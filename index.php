@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <?php
-  $notify = '';
-  $notifyClass = '';
-  
   if(isset($_POST['submit'])){
       // Membuat variabl untuk menerima data dari form
       $email = $_POST['email'];
@@ -26,16 +22,10 @@
       $headers .= 'From: '.$name.'<'.$email.'>'. "\r\n";
   
       // Kirim email
-      if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-          $notify = 'Pesan Anda sudah terkirim dengan sukses !';
-          $notifyClass = 'succdiv';
-      }else{
-          $notify = 'Maaf pesan Anda gagal terkirim, silahkan ulangi lagi.';
-          $notifyClass = 'errordiv';
-      }
+      mail($toEmail,$emailSubject,$htmlContent,$headers);
+      header("Location: index.php?mailsend");
+    }
 ?>
-=======
->>>>>>> 0be630706f48578d815bfae7c914771e093cf943
 <!DOCTYPE html>
   <html>
     <title>xikdp</title>
