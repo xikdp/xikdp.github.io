@@ -1,39 +1,3 @@
-<?php
-  $notify = '';
-  $notifyClass = '';
-  
-  if(isset($_POST['submit'])){
-      // Membuat variabl untuk menerima data dari form
-      $email = $_POST['email'];
-      $name = $_POST['name'];
-      $phone = $_POST['phone'];
-      $sm = $_POST['sm'];
-
-      $toEmail = 'dandakomang09@gmail.com'; // Ganti dengan alamat email yang Anda inginkan
-      $emailSubject = 'Pesan website dari '.$name;
-      $htmlContent = '<h2> via Form Kontak Website</h2>
-          <h4>Nama</h4><p>'.$name.'</p>
-          <h4>Email</h4><p>'.$email.'</p>
-          <h4>Phone</h4><p>'.$phone.'</p>
-          <h4>Short Message</h4><p>'.$sm.'</p>';
-  
-      // Mengatur Content-Type header untuk mengirim email dalam bentuk HTML
-      $headers = "MIME-Version: 1.0" . "\r\n";
-      $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-  
-            // Header tambahan
-      $headers .= 'From: '.$name.'<'.$email.'>'. "\r\n";
-  
-      // Kirim email
-      if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-          $notify = 'Pesan Anda sudah terkirim dengan sukses !';
-          $notifyClass = 'succdiv';
-      }else{
-          $notify = 'Maaf pesan Anda gagal terkirim, silahkan ulangi lagi.';
-          $notifyClass = 'errordiv';
-      }
-?>
-
 <!DOCTYPE html>
   <html>
     <title>xikdp</title>
