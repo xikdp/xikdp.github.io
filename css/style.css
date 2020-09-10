@@ -20,13 +20,13 @@
 	opacity: 0.7 !important;
 }
 
-.card-panel{
-	transition: 0.5s;
+.professional{
+	transition: 0.1s;
 	height: 10%;
 }
 
-.card-panel:hover{
-	transform: scale(1.05);
+.professional:hover{
+	transform: scale(1.02);
 }
 
 .pr,
@@ -45,4 +45,25 @@
 
 .pr{
 	padding: 20px 0;
+}
+
+.panel_contact{
+	height: 20%;
+}
+
+.send{
+	width: 100% !important;
+}
+
+.send,.cv:hover{
+	background-color: #00695C !important;
+}
+
+footer{
+	padding: 10px 0;
+}
+
+.sosmed{
+	margin-left: 10px;
+	margin-right: 10px;
 }
