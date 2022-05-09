@@ -1,0 +1,73 @@
+.slider h1,
+.slider h3,
+.slider h5,
+.experience,
+.intern {
+	text-shadow: 1px 1px 3px rgba(0,0,0,1.5);
+}
+#pasfoto {
+	height: 100px; 
+	width: 100px;
+	border-radius: 50%;
+}
+
+.parallax-container{
+	height: 40%;
+}
+
+.parallax img{
+	/*filter: grayscale(1);*/
+	opacity: 0.7 !important;
+}
+
+.professional{
+	transition: 0.1s;
+	height: 270px;
+}
+
+.professional:hover{
+	transform: scale(1.02);
+}
+
+.pr,
+.contact{
+	padding: 20px 0;
+}
+
+.materialboxed{
+	transition: 0.5s;
+	box-shadow: 0px 0.5px 10px 0px;
+	border-radius: 5px;
+}
+.materialboxed:hover{
+	transform: scale(1.05);
+}
+
+.pr{
+	padding: 20px 0;
+}
+
+.panel_contact{
+	height: 380px;
+}
+
+.send{
+	width: 100% !important;
+}
+
+.send:hover{
+	background-color: #00695C !important;
+}
+
+.cv:hover{
+	background-color: #00695C !important;
+}
+
+footer{
+	padding: 10px 0;
+}
+
+.sosmed{
+	margin-left: 10px;
+	margin-right: 10px;
+}
